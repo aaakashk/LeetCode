@@ -1,7 +1,6 @@
 class Solution {
 public:
     bool isPowerOfThree(int n) {
-        if(n < 1) return false;
         if(n == 1) return true;
         map<int, int> map;
         map[3] = 1;
