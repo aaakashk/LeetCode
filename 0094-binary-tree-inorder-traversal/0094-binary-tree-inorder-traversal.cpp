@@ -15,9 +15,9 @@ public:
     
     void inorder(TreeNode* root) {
         if(!root) return;
-        if(root->left) inorderTraversal(root->left);
+        inorderTraversal(root->left);
         vec.push_back(root->val);
-        if(root->right) inorderTraversal(root->right);
+        inorderTraversal(root->right);
     }
     
     vector<int> inorderTraversal(TreeNode* root) {
