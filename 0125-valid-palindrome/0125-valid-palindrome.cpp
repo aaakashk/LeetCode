@@ -4,8 +4,7 @@ public:
         string str = "";
         for(char c : s) {
             if(c >= 'A' && c <= 'Z') str += c + 32;
-            else if(c >= 'a' && c <= 'z') str += c;
-            else if(c >= '0' && c <= '9') str += c;
+            else if(isalnum(c)) str += c;
         }
         string new_str = str;
         reverse(new_str.begin(), new_str.end());
