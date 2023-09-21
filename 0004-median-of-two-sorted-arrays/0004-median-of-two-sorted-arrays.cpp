@@ -17,7 +17,7 @@ public:
             else median1 = nums2[j++];
         }
         
-        if(m + n & 1) return (double) median1;
-        return ((double)median1 + (double)median2) / 2.0;
+        if(m + n & 1) return static_cast<double>(median1);
+        return (static_cast<double>(median1) + static_cast<double>(median2)) / 2.0;
     }
 };
